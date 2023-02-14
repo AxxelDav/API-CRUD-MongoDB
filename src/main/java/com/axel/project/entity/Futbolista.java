@@ -8,6 +8,7 @@ import org.springframework.data.annotation.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Document(collection = "futbol")
 public class Futbolista {
 
     @Id
