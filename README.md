@@ -8,74 +8,38 @@ Tecnologias utilizadas:
 - JPA
 - POSTMAN
 
-## Servicios
+## Endpoints
 
 GET
+- Obtengo todos los futbolistas.
+`http://localhost:8080/futbol/v1/futbolistas`
 
-`http://localhost:8092/customers`
+GET
+- Obtengo un futbolista por ID- Obtengo todos los futbolistas.
+`http://localhost:8080/futbol/v1/futbolistas/1`
 
 POST
-
-`http://localhost:8092/customers`
+- Creo un nuevo futbolista.
+`http://localhost:8080/futbol/v1/futbolistas`
 
 `--data-raw '{
-    "numberID": "32404590",
-    "firstName": "Axel",
-    "lastName": "Cespedes",
-    "email": "adcespedes@argentina.com",
-    "photoUrl": "",
-    "region": {
-        "id": 2,
-        "name": "Centroamerica"
-    }
+    "id": 1,
+    "nombre": "Lionel",
+    "apellido": "Messi",
+    "telefono": 117788921,
+    "equipo": "Barcelona"
+}
 }'`
 
 **Product**
 
-GET
+PUT
+- Edito un futbolista de la Base de Datos.
+`http://localhost:8080/futbol/v1/futbolistas/1`
 
-`http://localhost:8091/products`
+DELETE
+- Elimino un futbolista de la Base de Datos.
+`http://localhost:8080/futbol/v1/futbolistas/1`
 
-POST
 
-`http://localhost:8091/products`
-
-`--data-raw '{
-    "name": "Libro del Rey Tigre",
-    "description": "Demasiado bueno el Libro",
-    "stock": 70,
-    "price": 1000,
-    "category": {
-        "id": 2,
-        "name": "books"
-    }
-}'`
-
-**Shopping**
-
-GET
-
-`http://localhost:8093/invoices`
-
-POST
-
-`http://localhost:8093/invoices`
-
-`--data-raw '{
-    "numberInvoice": "002",
-        "description": "Invoice store",
-        "customerId": 2,
-        "items": [
-            {
-                "quantity": 1,
-                "price": 178.89,
-                "productId": 1
-            },
-            {
-                "quantity": 2,
-                "price": 40.06,
-                "productId": 3
-            }
-        ]
-}'`
 
