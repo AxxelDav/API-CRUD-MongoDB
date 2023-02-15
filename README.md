@@ -12,7 +12,8 @@ Tecnologias utilizadas:
 
 GET
 
-- Obtengo todos los futbolistas.
+- Obtengo todos los futbolistas
+- 
 `http://localhost:8080/futbol/v1/futbolistas`
 
 GET
