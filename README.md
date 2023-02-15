@@ -31,8 +31,6 @@ POST
 }
 }'`
 
-**Product**
-
 PUT
 - Edito un futbolista de la Base de Datos.
 `http://localhost:8080/futbol/v1/futbolistas/1`
